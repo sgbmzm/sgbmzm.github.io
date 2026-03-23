@@ -2,9 +2,10 @@
 <html lang="he" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<title>Simcha Gershon Bohrer</title>
+<title>Simcha Gershon Bohrer שמחה גרשון בורר</title>
 
 <style>
+
 body {
     font-family: Arial, sans-serif;
     background: #f5f6fa;
@@ -22,11 +23,39 @@ main {
     padding: 40px;
 }
 
+/* גריד של 4 טורים */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* כל עמודה */
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* גבול ימני לכל טור חוץ מהטור האחרון */
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-right: 5px solid #ccc; /* הקו המפריד */
+    padding-right: 15px; /* קצת ריווח מהקו */
+}
+
+/* מסירים גבול מלפני הטור הראשון */
+.column:first-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+/* כרטיס */
 .card {
     background: white;
     padding: 20px;
-    margin: 20px auto;
-    width: 300px;
     border-radius: 12px;
     box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
 }
@@ -40,6 +69,20 @@ a {
 a:hover {
     color: #0652DD;
 }
+
+/* התאמה למסך קטן */
+@media (max-width: 1000px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 </style>
 </head>
 
@@ -47,36 +90,253 @@ a:hover {
 
 <header>
 <h1>ברוכים הבאים</h1>
-<p>הפרויקטים של Simcha Gershon Bohrer</p>
+<p>הפרויקטים של הרב ד"ר שמחה גרשון בורר</p>
 </header>
 
 <main>
 
+<div class="grid">
+
+
+
+
+
+<!-- טור 1 – כתבי יד -->
+<div class="column">
+<h2>📜 כתבי יד ארץ-ישראלים של המשנה</h2>
+
+
+
 <div class="card">
-<h2>🕒 Cochavim Uzmanim</h2>
+<h3>כתב יד פרמה (דֶה-רוֹסִּי 138)</h3>
+<a href="https://mishna-parma-138.netlify.app/">
+אתר לתצוגה דיגיטלית מתקדמת
+</a>
+<br> <!-- שורה ריקה -->
+<a href="#">
+אפליקציית אנדרואיד
+</a>
+<br> <!-- שורה ריקה -->
+<a href="https://github.com/sgbmzm/sgbmzm.github.io/blob/main/articles/%D7%9B%D7%9C%20%D7%A9%D7%A9%D7%94%20%D7%A1%D7%93%D7%A8%D7%99%20%D7%9E%D7%A9%D7%A0%D7%94%20%D7%A4%D7%A8%D7%9E%D7%94%20%D7%98%D7%91%D7%AA%20%D7%94%D7%AA%D7%A9%D7%A4%D7%95.pdf">
+גרסת PDF
+</a>
+
+</div>
+
+
+
+<div class="card">
+<h3>מאמרים</h3>
+<a href="https://github.com/sgbmzm/sgbmzm.github.io/blob/main/articles/%D7%91%D7%90%20%D7%9C%D7%AA%D7%A7%D7%9F%20%D7%95%D7%A0%D7%9E%D7%A6%D7%90%20%D7%9E%D7%A7%D7%9C%D7%A7%D7%9C%20%D7%9E%D7%AA%D7%95%D7%9A%20%D7%9C%D7%A9%D7%95%D7%A0%D7%A0%D7%95%20%D7%A4%2C%D7%93.pdf">
+בא לתקן ונמצא מקלקל מתוך לשוננו פ,ד
+</a>
+
+<!-- קו מפריד -->
+<hr style="border: 0; border-top: 2px solid #ccc; width: 50%; margin: 20px auto;">
+
+<a href="https://github.com/sgbmzm/sgbmzm.github.io/blob/main/articles/%D7%9E%D7%90%D7%9E%D7%A8%20%D7%AA%D7%99%D7%A7%D7%95%D7%A0%D7%99%20%D7%94%D7%A1%D7%95%D7%A4%D7%A8%20%D7%9E%D7%AA%D7%95%D7%9A%20%D7%9C%D7%A9%D7%95%D7%A0%D7%A0%D7%95%20%D7%A4%D7%93.pdf">
+מאמר תיקוני הסופר מתוך לשוננו פד
+</a>
+<!-- קו מפריד -->
+<hr style="border: 0; border-top: 2px solid #ccc; width: 50%; margin: 20px auto;">
+
+<a href="https://github.com/sgbmzm/sgbmzm.github.io/blob/main/articles/%D7%9E%D7%90%D7%9E%D7%A8%20%D7%A2%D7%99%D7%A8%D7%95%D7%91%20%D7%92%D7%A8%D7%A1%D7%90%D7%95%D7%AA%20%D7%94%D7%9E%D7%A2%D7%99%D7%99%D7%9F%20%D7%AA%D7%A9%D7%A8%D7%99%20%D7%AA%D7%A9%D7%A4%D7%92.pdf">
+מאמר עירוב גרסאות המעיין תשרי תשפג
+</a>
+
+</div>
+
+
+
+
+<!-- סגירת טור ראשון -->
+</div>
+
+
+
+
+
+
+
+<!-- טור 2 – זמני היום -->
+<div class="column">
+<h2>🕒 זמני היום בהלכה</h2>
+
+
+
+
+<div class="card">
+<h3>כוכבים וזמנים: תוכנה ואפליקצייה</h3>
 <p>חישובי זמני הלכה</p>
 <a href="https://sgbmzm.github.io/cochavim-uzmanim/">
-כניסה לפרויקט
+אתר תוכנת כוכבים וזמנים
 </a>
 </div>
 
+
+
 <div class="card">
-<h2>מאמרים</h2>
-<p>מאמרים בנושאים שונים</p>
+<h3>מאמרים</h3>
+<a href="https://github.com/sgbmzm/sgbmzm.github.io/blob/main/articles/%D7%93%D7%95%D7%A7%D7%98%D7%95%D7%A8%D7%98%20%D7%94%D7%99%D7%91%D7%98%D7%99%D7%9D%20%D7%90%D7%A1%D7%98%D7%A8%D7%95%D7%A0%D7%95%D7%9E%D7%99%D7%99%D7%9D%20%D7%AA%D7%9C%D7%9E%D7%95%D7%93%D7%99%D7%99%D7%9D%20%D7%95%D7%94%D7%9C%D7%9B%D7%AA%D7%99%D7%99%D7%9D%20%D7%94%D7%99%D7%A1%D7%98%D7%95%D7%A8%D7%99%D7%99%D7%9D%20%D7%91%D7%A2%D7%A0%D7%99%D7%99%D7%A0%D7%99%20%D7%91%D7%99%D7%9F%20%D7%94%D7%A9%D7%9E%D7%A9%D7%95%D7%AA%20%D7%A9%D7%9E%D7%97%D7%94%20%D7%92%D7%A8%D7%A9%D7%95%D7%9F%20%D7%91%D7%95%D7%A8%D7%A8.pdf">
+עבודת הדוקטור שלי: בענייני בין השמשות
+</a>
+
+<!-- קו מפריד -->
+<hr style="border: 0; border-top: 2px solid #ccc; width: 50%; margin: 20px auto;">
+
+<a href="https://github.com/sgbmzm/sgbmzm.github.io/blob/main/articles/%D7%91%D7%95%D7%A8%D7%A8%20%D7%A7%D7%91%D7%99%D7%A2%D7%AA%20%D7%96%D7%9E%D7%A0%D7%99%20%D7%94%D7%99%D7%95%D7%9D-%D7%9E%D7%95%D7%9B%D7%9F.pdf">
+מאמר קביעת זמני היום בד"ד 38-39
+</a>
+
+
+<!-- קו מפריד -->
+<hr style="border: 0; border-top: 2px solid #ccc; width: 50%; margin: 20px auto;">
+
+<a href="https://github.com/sgbmzm/sgbmzm.github.io/blob/main/articles/%D7%94%D7%95%D7%A8%D7%90%D7%AA%D7%95%20%D7%A9%D7%9C%20%D7%94%D7%92%D7%90%D7%95%D7%9F%20%D7%A8%D7%91%D7%99%20%D7%A9%D7%9E%D7%95%D7%90%D7%9C%20%D7%A1%D7%9C%D7%A0%D7%98%20%D7%96%D7%A6%D7%9C%20%D7%91%D7%A2%D7%A0%D7%99%D7%99%D7%9F%20%D7%A1%D7%95%D7%A3%20%D7%91%D7%99%D7%9F%20%D7%94%D7%A9%D7%9E%D7%A9%D7%95%D7%AA%20%D7%94%D7%9E%D7%A2%D7%99%D7%9F%20%D7%AA%D7%A9%D7%A8%D7%99%20%D7%AA%D7%A9%D7%A2%D7%97.pdf">
+מאמר הוראת הרב סלנט המעיין תשרי תשעח
+</a>
+
+</div>
+
+
+
+
+
+<!-- סגירת טור שני -->
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- טור 3 – DNA -->
+<div class="column">
+<h2>🧬 DNA כוהנים ויהודים</h2>
+
+
+
+
+<div class="card">
+<h3>שירות סיוע בבירורי כהונה וייחוס משפחתי</h3>
+<a href="https://sgbmzm.github.io/leveitavotam/">
+לבית אבותם (עסק זעיר)
+</a>
+</div>
+
+
+<div class="card">
+<h3>מאמרים</h3>
+
+<a href="http://github.com/sgbmzm/sgbmzm.github.io/blob/main/articles/%D7%91%D7%95%D7%A8%D7%A8%20-%20%D7%99%D7%99%D7%97%D7%95%D7%A1%20%D7%9B%D7%94%D7%A0%D7%99%D7%9D%20-%20%D7%9E%D7%95%D7%9B%D7%9F.pdf">
+מאמר ייחוס כוהנים בד"ד 38-39
+</a>
+
+<!-- קו מפריד -->
+<hr style="border: 0; border-top: 2px solid #ccc; width: 50%; margin: 20px auto;">
+
+<a href="https://www.biorxiv.org/content/10.64898/2025.12.08.692646v1">
+Revisiting the lineages of the Cohanim using data from next-generation sequencing
+</a>
+
+</div>
+
+
+
+<div class="card">
+<h3>תוכנות</h3>
+<p>כלי לחיזוי קבוצת "אבותינו" לפי תוצאות STR</p>
+<a href="https://github.com/sgbmzm/AB-PREDICTOR/releases/tag/auto-build">
+AB-PREDICTOR
+</a>
+<!-- קו מפריד -->
+<hr style="border: 0; border-top: 2px solid #ccc; width: 50%; margin: 20px auto;">
+<p>כלי לניתוח ענפים בכרומוזום Y לפי תוצאות דנ"א גולמיות</p>
+<a href="https://github.com/sgbmzm/y-dna-analyzer">
+y-dna-analyzer
+</a>
+<br> <!-- שורה ריקה -->
+<a href="https://github.com/sgbmzm/y-dna-analyzer/releases/tag/auto-build">
+הורדת התוכנה למערכות הפעלה שונות
+</a>
+<!-- קו מפריד -->
+<hr style="border: 0; border-top: 2px solid #ccc; width: 50%; margin: 20px auto;">
+<p>כלי להשוואת רצפי דנא מיטוכונדרי</p>
+<a href="https://github.com/sgbmzm/mtDNA_tool/releases/tag/auto-build">
+mtDNA Tool (למחשב)
+</a>
+<br> <!-- שורה ריקה -->
+<a href="https://github.com/sgbmzm/mtDNA_tool_Android/releases/tag/mtdna_tool_apk">
+גרסת אנדרואיד
+</a>
+
+</div>
+
+
+
+
+<!-- סגירת טור שלישי -->
+</div>
+
+
+
+
+
+
+
+
+
+<!-- טור 4 – כללי -->
+<div class="column">
+<h2>📦 כללי</h2>
+
+
+
+
+<div class="card">
+<h3>כותרת ראשית</h3>
+<p>קישורים לכל המאמרים</p>
 <a href="https://github.com/sgbmzm/sgbmzm.github.io/tree/main/articles">
-כניסה לפרויקט
+כל המאמרים
 </a>
 </div>
 
+
+
 <div class="card">
-<h2>🧬 mtDNA Tool</h2>
-<p>כלי להשוואת רצפי mtDNA</p>
+<h3>פרויקטים נוספים</h3>
+<p>כלים כלליים</p>
 <a href="#">
 בקרוב
 </a>
 </div>
 
+
+
+
+<!-- סגירת טור רביעי -->
+</div>
+
+
+
+
+
+
+</div>
+
 </main>
+
+<script>
+  // בוחרים את כל הקישורים בעמוד
+  document.querySelectorAll('a').forEach(a => {
+    a.setAttribute('target', '_blank');          // לפתוח בלשונית חדשה
+    a.setAttribute('rel', 'noopener noreferrer'); // למען אבטחה
+  });
+</script>
 
 </body>
 </html>
