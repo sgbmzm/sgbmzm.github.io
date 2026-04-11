@@ -204,6 +204,15 @@
             header h1 { font-size: 2em; }
             .content-inner { padding: 20px; }
         }
+        @media print {
+
+            /* פתיחת כל האקורדיונים בגרסת הדפסה */
+            .accordion-content {
+                max-height: none !important;
+                overflow: visible !important;
+            }
+            
+        }
     </style>
 </head>
 <body>
@@ -587,3 +596,4 @@
 
 </body>
 </html>
+
